@@ -2,5 +2,5 @@
 
 #print the current path
 
-echo 'pwd'
+echo "$(pwd)"
 
