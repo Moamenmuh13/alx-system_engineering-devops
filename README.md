@@ -1,4 +1,4 @@
-#First Task with shell 
-## ALX SWE
+#ALX SWE
+## First task with shell
 
 printing the path name
