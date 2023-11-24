@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# This script displays the content of the current directory in a list format,
+# showing only the part of the name after the first dash (excluding hidden files)
+
+# Using a for loop to iterate through the files in the current directory
+for file in *; do
+	# Check if the file is not a hidden file and has a dash in the name
+	if [[ ! "$file" =~ ^\. && "$file" =~ .*-.* ]]; then
+		# Extract the part of the name after the first dash
+		name_after_dash=$(echo "$file" | cut -d '-' -f 2-)
+
+		# Display the extracted name
+		echo "$name_after_dash"
+	fi
+done
